@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using _7pr.Classes;
 
 namespace _7pr
 {
@@ -24,6 +25,13 @@ namespace _7pr
         public MainWindow()
         {
             InitializeComponent();
+
+            Circle circle = new Circle(200, 200, 60);
+
+            Triangle triangle = new Triangle(450, 200, 60);
+
+            circle.Draw(DrawCanvas);
+            triangle.Draw(DrawCanvas);
         }
     }
 }

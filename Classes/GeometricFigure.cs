@@ -15,7 +15,7 @@ namespace _7pr.Classes
         public GeometricFigure(double x, double y)
         {
             X = x;
-            Y = Y;
+            Y = y;
         }
 
         public virtual void Draw(Canvas canvas)
